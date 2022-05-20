@@ -1,9 +1,7 @@
 <!--
  * @Description: 项目根组件
  * @Author: hai-27
- * @Date: 2020-02-07 16:23:00
- * @LastEditors: hai-27
- * @LastEditTime: 2020-04-05 13:14:48
+
  -->
 <template>
   <div id="app" name="app">
@@ -60,7 +58,9 @@
             </router-link>
           </div>
           <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/goods">全部商品</el-menu-item>
+
+          <el-menu-item index="/goods">全部礼品</el-menu-item>
+             <el-menu-item index="/blog">论坛</el-menu-item>
           <el-menu-item index="/about">关于我们</el-menu-item>
 
           <div class="so">
@@ -107,6 +107,8 @@
               <router-link to="/">首页</router-link>
               <span>|</span>
               <router-link to="/goods">全部商品</router-link>
+              <span>|</span>
+              <router-link to="/goods">论坛</router-link>
               <span>|</span>
               <router-link to="/about">关于我们</router-link>
             </p>
