@@ -32,6 +32,7 @@
             <li>
               <router-link to="/collect">我的收藏</router-link>
             </li>
+
             <li :class="getNum > 0 ? 'shopCart-full' : 'shopCart'">
               <router-link to="/shoppingCart">
                 <i class="el-icon-shopping-cart-full"></i> 购物车
@@ -61,7 +62,9 @@
 
           <el-menu-item index="/goods">全部礼品</el-menu-item>
              <el-menu-item index="/blog">论坛</el-menu-item>
-          <el-menu-item index="/about">关于我们</el-menu-item>
+
+          <el-menu-item index="/contact">联系我们</el-menu-item>
+          <el-menu-item index="/about">F&A</el-menu-item>
 
           <div class="so">
             <el-input placeholder="请输入搜索内容" v-model="search">
@@ -78,6 +81,7 @@
       <MyRegister :register="register" @fromChild="isRegister"></MyRegister>
 
       <!-- 主要区域容器 -->
+
       <el-main>
         <keep-alive>
           <router-view></router-view>
@@ -108,7 +112,10 @@
               <span>|</span>
               <router-link to="/goods">全部商品</router-link>
               <span>|</span>
-              <router-link to="/goods">论坛</router-link>
+
+              <router-link to="/blog">论坛</router-link>
+              <span>|</span>
+              <router-link to="/contact">联系我们</router-link>
               <span>|</span>
               <router-link to="/about">关于我们</router-link>
             </p>
